@@ -16,5 +16,5 @@ steps:
       cd /home/azureuser/amazon-clone
       pwd
       ls -la
-      git status
+      
 
