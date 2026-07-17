@@ -5,17 +5,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: CopyFilesOverSSH@0
-  inputs:
-    sshEndpoint: 'azure-vm-ssh'
-    sourceFolder: '$(Build.SourcesDirectory)'
-    contents: '**'
-    targetFolder: '/home/azureuser/amazon-clone'
-
 - task: SSH@0
   inputs:
     sshEndpoint: 'azure-vm-ssh'
     runOptions: 'commands'
     commands: |
-      sudo cp -r /home/azureuser/amazon-clone/* /var/www/html/
+      cd /home/azureuser/amazon-clone
+      git pull origin main
+      sudo cp -r * /var/www/html/
       sudo systemctl restart nginx
