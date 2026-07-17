@@ -1,90 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ShopEasy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - CI/CD Demo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #232F3E;
+            color: white;
+            text-align: center;
+        }
 
-<link rel="stylesheet" href="css/style.css">
+        header {
+            background: #131A22;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #FF9900;
+        }
+
+        .container {
+            margin-top: 60px;
+        }
+
+        .card {
+            width: 500px;
+            margin: auto;
+            background: white;
+            color: black;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 0px 15px gray;
+        }
+
+        .success {
+            color: green;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .version {
+            color: red;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            background: #131A22;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-
-<h1>ShopEasy</h1>
-
-<input type="text" placeholder="Search products...">
-
-<button>Search</button>
-
+    <h1>Amazon Clone</h1>
 </header>
 
-<nav>
-
-<a href="#">Home</a>
-<a href="#">Mobiles</a>
-<a href="#">Electronics</a>
-<a href="#">Fashion</a>
-<a href="#">Contact</a>
-<a href="login.html">Login</a>
-
-</nav>
-
-<section class="products">
+<div class="container">
 
     <div class="card">
-        <img src="images/iphone.jpg" alt="iPhone">
-        <h2>iPhone 16</h2>
-        <p>₹1,20,000</p>
-        <button>Add to Cart</button>
+
+        <h2>🚀 Azure DevOps CI/CD Successful</h2>
+
+        <p class="success">
+            Website deployed automatically using Azure DevOps Pipeline
+        </p>
+
+        <p>
+            Linux → Git → GitHub → Azure DevOps → Azure VM → Nginx
+        </p>
+
+        <div class="version">
+            Version 2.0
+        </div>
+
+        <br>
+
+        <p>
+            Deployment Date:
+            <strong>17 July 2026</strong>
+        </p>
+
     </div>
 
-    <div class="card">
-        <img src="images/laptop.jpg" alt="Laptop">
-        <h2>Gaming Laptop</h2>
-        <p>₹75,000</p>
-        <button>Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="images/headphon.jpg" alt="Headphon">
-        <h2>Headphones</h2>
-        <p>₹3,999</p>
-        <button>Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="images/watch.jpg" alt="Watch">
-        <h2>Smart Watch</h2>
-        <p>₹5,999</p>
-        <button>Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="images/shoes.jpg" alt="Shoes">
-        <h2>Sports Shoes</h2>
-        <p>₹2,499</p>
-        <button>Add to Cart</button>
-    </div>
-
-    <div class="card">
-        <img src="images/speaker.jpg" alt="Speaker">
-        <h2>Bluetooth Speaker</h2>
-        <p>₹1,999</p>
-        <button>Add to Cart</button>
-    </div>
-
-</section>
+</div>
 
 <footer>
 
-<p>© 2026 ShopEasy</p>
+    DevOps Practice Project
 
 </footer>
 
-<script src="js/script.js"></script>
-
 </body>
-
 </html>
