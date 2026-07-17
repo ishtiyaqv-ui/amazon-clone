@@ -17,6 +17,4 @@ steps:
       pwd
       ls -la
       git status
-      git pull origin main
-      sudo cp -r ./* /var/www/html/
-      sudo systemctl restart nginx
+
