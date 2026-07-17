@@ -10,9 +10,6 @@ steps:
     sshEndpoint: 'azure-vm-ssh'
     runOptions: 'commands'
     commands: |
-      cd /home/azureuser/amazon-clone
       pwd
-      git status
-      git pull origin main
-      sudo cp -r ./* /var/www/html/
-      sudo systemctl restart nginx
+      whoami
+      hostname
